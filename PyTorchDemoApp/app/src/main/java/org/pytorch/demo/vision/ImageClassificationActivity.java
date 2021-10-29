@@ -7,6 +7,8 @@ import android.util.Log;
 import android.view.TextureView;
 import android.view.View;
 import android.view.ViewStub;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
 import android.widget.TextView;
 
 import org.pytorch.IValue;
@@ -66,6 +68,7 @@ public class ImageClassificationActivity extends AbstractCameraXActivity<ImageCl
     private TextView mFpsText;
     private TextView mMsText;
     private TextView mMsAvgText;
+    private WebView mGameView;
     private Module mModule;
     private String mModuleAssetName;
     private String[] mDatasetLabels;
@@ -101,11 +104,31 @@ public class ImageClassificationActivity extends AbstractCameraXActivity<ImageCl
         mMsText = findViewById(R.id.image_classification_ms_text);
         mMsAvgText = findViewById(R.id.image_classification_ms_avg_text);
 
+
+        mGameView = findViewById(R.id.game_view);
+
         if (!TextUtils.isEmpty(getIntent().getStringExtra(INTENT_DATASET_NAME))) {
             mDatasetLabels = Constants.CUSTOM_CLASSES;
+            setWebView();
         } else {
             mDatasetLabels = Constants.IMAGENET_CLASSES;
+            mGameView.setVisibility(View.GONE);
         }
+    }
+
+    public void setWebView() {
+        mGameView.loadUrl("file:///android_asset/t-rex-runner/index.html");
+        WebSettings webSettings = mGameView.getSettings();
+        mGameView.setPadding(0, 0, 0, 0);
+        mGameView.setScrollBarStyle(WebView.SCROLLBARS_OUTSIDE_OVERLAY);
+        webSettings.setLoadWithOverviewMode(true);
+        webSettings.setUseWideViewPort(true);
+        webSettings.setJavaScriptEnabled(true);
+        webSettings.setAllowContentAccess(true);
+        webSettings.setDomStorageEnabled(true);
+        webSettings.setLoadWithOverviewMode(true);
+        webSettings.setAllowUniversalAccessFromFileURLs(true);
+        webSettings.setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
     }
 
     @Override

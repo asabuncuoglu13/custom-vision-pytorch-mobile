@@ -37,6 +37,11 @@ It uses the aforementioned [`TensorImageUtils.imageYUV420CenterCropToFloat32Tens
 
 After getting predicted scores from the model it finds top K classes with the highest scores and shows on the UI.
 
+
+#### Custom Image Classifier Example
+
+Following the [Custom Mobile Vision Classifier Notebook](../torch_transfer_learning_mobilenet3.ipynb), a custom model powers the controller mechanism for the Chrome's Dino Game. This application is an example use of custom model to control a web app. 
+
 #### Language Processing Example
 
 Another example is natural language processing, based on an LSTM model, trained on a reddit comments dataset.

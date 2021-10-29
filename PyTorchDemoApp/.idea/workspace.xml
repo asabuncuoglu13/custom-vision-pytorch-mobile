@@ -29,28 +29,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d9e9678-c0dd-40ec-ba45-180ac0305e9d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/mobilenet_v2.ptl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/mobilenetv3_custom.ptl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/resnet18.ptl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HelloWorldApp/app/src/main/assets/image.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../HelloWorldApp/app/src/main/assets/image.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HelloWorldApp/app/src/main/java/org/pytorch/helloworld/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HelloWorldApp/app/src/main/java/org/pytorch/helloworld/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/mobilenet_v2.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/resnet18.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/pytorch/demo/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/pytorch/demo/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/pytorch/demo/InfoViewFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/pytorch/demo/InfoViewFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/t-rex-runner/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/t-rex-runner/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/t-rex-runner/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/t-rex-runner/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/t-rex-runner/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/org/pytorch/demo/vision/ImageClassificationActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/pytorch/demo/vision/ImageClassificationActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/pytorch/demo/vision/VisionListActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/pytorch/demo/vision/VisionListActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_image_classification.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_image_classification.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/vision_list_content.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/vision_list_content.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[RF8NA1S33GH]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />

@@ -63,6 +63,16 @@
         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:title="@string/image_classification_title" />
 
+    <WebView
+        android:id="@+id/game_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/image_classification_result_row_margin"
+        android:padding="@dimen/image_classification_result_row_padding"
+        app:layout_constraintBottom_toTopOf="@id/image_classification_result_header_row"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
     <org.pytorch.demo.vision.view.ResultRowView
         android:id="@+id/image_classification_result_header_row"
         android:layout_width="match_parent"
