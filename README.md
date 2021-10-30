@@ -15,3 +15,4 @@ We used the mobilenet-v3 pre-trained model as the base architecture for the cust
 2. Android Demo App Basis: [PyTorch Official Demo](https://github.com/pytorch/android-demo-app/tree/master/PyTorchDemoApp)
 3. Chrome's T-Rex Runner: [@wayou's extracted code](https://github.com/wayou/t-rex-runner)
 
+

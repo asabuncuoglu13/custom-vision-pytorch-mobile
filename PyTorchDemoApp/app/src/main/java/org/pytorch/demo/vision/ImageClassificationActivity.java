@@ -4,9 +4,11 @@ import android.os.Bundle;
 import android.os.SystemClock;
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.TextureView;
 import android.view.View;
 import android.view.ViewStub;
+import android.view.inputmethod.BaseInputConnection;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.TextView;
@@ -77,6 +79,8 @@ public class ImageClassificationActivity extends AbstractCameraXActivity<ImageCl
     private long mMovingAvgSum = 0;
     private Queue<Long> mMovingAvgQueue = new LinkedList<>();
 
+    BaseInputConnection inputConnection;
+
     @Override
     protected int getContentViewLayoutId() {
         return R.layout.activity_image_classification;
@@ -110,6 +114,7 @@ public class ImageClassificationActivity extends AbstractCameraXActivity<ImageCl
         if (!TextUtils.isEmpty(getIntent().getStringExtra(INTENT_DATASET_NAME))) {
             mDatasetLabels = Constants.CUSTOM_CLASSES;
             setWebView();
+            inputConnection = new BaseInputConnection(mGameView, true);
         } else {
             mDatasetLabels = Constants.IMAGENET_CLASSES;
             mGameView.setVisibility(View.GONE);
@@ -137,6 +142,14 @@ public class ImageClassificationActivity extends AbstractCameraXActivity<ImageCl
         mMovingAvgQueue.add(result.moduleForwardDuration);
         if (mMovingAvgQueue.size() > MOVING_AVG_PERIOD) {
             mMovingAvgSum -= mMovingAvgQueue.remove();
+        }
+
+        // Control the Game
+        if (result.topNClassNames[0].contentEquals(Constants.CUSTOM_CLASSES[0])){
+            inputConnection.sendKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_SPACE));
+        }
+        if (result.topNClassNames[0].contentEquals(Constants.CUSTOM_CLASSES[1])){
+            inputConnection.sendKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_L));
         }
 
         for (int i = 0; i < TOP_K; i++) {
